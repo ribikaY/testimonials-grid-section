@@ -25,7 +25,7 @@ const Testimonial = ({testimonial}) => {
          </div>
          
         <div className={`relative z-10`}>
-          <h1 className={`font-semibold mt-[17px] text-xl leading-[1.55rem] ${testimonial.id === 1 ? 'text-[#FFE4FF]' : testimonial.id === 3 ? 'pr-1 text-primary2' : testimonial.id === 5 ? 'text-primary2': 'text-[#edf2f8]' }`}>{testimonial.title}</h1>
+          <h1 className={`font-semibold mt-[17px] text-[20px] leading-[1.55rem] ${testimonial.id === 1 ? 'text-[#FFE4FF]' : testimonial.id === 3 ? 'pr-1 text-primary2' : testimonial.id === 5 ? 'text-primary2': 'text-[#edf2f8]' }`}>{testimonial.title}</h1>
           <p className={`leading-[1.15rem] opacity-70 ${testimonial.id === 3 || testimonial.id === 4 || testimonial.id === 5 ? 'mt-[20px]' : ' mt-4'}`}>&quot; {testimonial.text} &quot;</p>
         </div>
        </div>
