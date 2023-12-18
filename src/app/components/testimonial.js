@@ -11,8 +11,8 @@ const Testimonial = ({testimonial}) => {
        >
         {testimonial.id === 1 && <div className="absolute right-20 top-0 z-0"><Image src={quote} alt="quote" width="104px" height="102px"/></div>}
          <div className="flex">
-            <div className="inline-block w-[32px] h-[32px] self-end">
-              <Image src={testimonial.profile.img} alt={testimonial.id} width="32px" height="32px" className={`border-2 border-transparent rounded-full ${testimonial.id === 1 ? 'border-[#A980EB]' : testimonial.id === 4 && 'border-[#7541C8]'}`}/>
+            <div className="inline-block self-end">
+              <Image src={testimonial.profile.img} alt={testimonial.id} width={32} height={32} className={`border-2 rounded-full ${testimonial.id === 1 ? 'border-[#A980EB]' : testimonial.id === 4 && 'border-[#7541C8]'}`}/>
             </div>
             <div className={`ml-[15px] `}>
               <p>
@@ -25,7 +25,7 @@ const Testimonial = ({testimonial}) => {
          </div>
          
         <div className={`relative z-10`}>
-          <h1 className={`font-semibold mt-[16px] text-[19px] leading-[1.45rem] ${testimonial.id === 1 ? 'text-[#FFE4FF]' : testimonial.id === 3 ? 'pr-[10px] text-primary2' : testimonial.id === 5 ? 'text-primary2': 'text-[#edf2f8]' }`}>{testimonial.title}</h1>
+          <h1 className={`font-semibold mt-[16px] text-[19px] leading-[1.45rem] ${testimonial.id === 1 ? 'text-[#FFE4FF]' : testimonial.id === 3 ? 'pr-[8px] text-primary2' : testimonial.id === 5 ? 'text-primary2': 'text-[#edf2f8]' }`}>{testimonial.title}</h1>
           <p className={`leading-[1.13rem] opacity-70 ${testimonial.id === 3 || testimonial.id === 4 || testimonial.id === 5 ? 'mt-[20px]' : ' mt-4'}`}>&quot; {testimonial.text} &quot;</p>
         </div>
        </div>
